@@ -6,20 +6,48 @@
   <title>Support · Melow</title>
   <meta name="description" content="Help with Melow: getting your Apple Music library on its shelves, Melow Pro, lyrics, and how to get in touch.">
   <link rel="icon" href="../icon.png">
+  <meta name="theme-color" content="#f2efeb" media="(prefers-color-scheme: light)">
+  <meta name="theme-color" content="#1b1c1e" media="(prefers-color-scheme: dark)">
   <link rel="stylesheet" href="../style.css">
+  <script>document.documentElement.classList.add("js")</script>
+  <script src="../site.js" defer></script>
 </head>
 <body>
-  <div class="wrap">
-    <header class="bar">
-      <a class="brand" href="../"><img src="../icon.png" alt="">Melow</a>
-      <nav>
+  <header class="site-nav">
+    <nav class="nav-pill glass" aria-label="Melow">
+      <a class="brand" href="../"><img src="../icon.png" alt="" width="30" height="30">Melow</a>
+      <ul class="nav-links">
+        <li><a href="../#landscape">Landscape</a></li>
+        <li><a href="../#shelf">Shelf</a></li>
+        <li><a href="../#player">Player</a></li>
+        <li><a href="../#mac">Mac</a></li>
+        <li><a href="../#languages">Languages</a></li>
+        <li><a href="../#more">Features</a></li>
+        <li><a href="../#pricing">Pricing</a></li>
+      </ul>
+      <a class="nav-button" href="../support/" aria-current="page">Support</a>
+      <button class="nav-toggle" type="button" aria-expanded="false" aria-controls="nav-menu" aria-label="Menu"></button>
+    </nav>
+    <div class="nav-menu glass" id="nav-menu">
+      <ul>
+        <li><a href="../#landscape">Landscape</a></li>
+        <li><a href="../#shelf">Shelf</a></li>
+        <li><a href="../#player">Player</a></li>
+        <li><a href="../#mac">Mac</a></li>
+        <li><a href="../#languages">Languages</a></li>
+        <li><a href="../#more">Features</a></li>
+        <li><a href="../#pricing">Pricing</a></li>
+      </ul>
+      <div class="minor">
         <a href="../support/" aria-current="page">Support</a>
         <a href="../privacy/">Privacy</a>
         <a href="../terms/">Terms</a>
-      </nav>
-    </header>
+      </div>
+    </div>
+  </header>
 
-    <article>
+  <div class="wrap">
+    <article class="doc glass">
       <h1>Support</h1>
       <p class="updated">Questions, problems or ideas: <a href="mailto:melow_player@icloud.com">melow_player@icloud.com</a>. I read every message.</p>
 
@@ -57,9 +85,16 @@
       <p>Email <a href="mailto:melow_player@icloud.com">melow_player@icloud.com</a>. It helps to include your device, its system version, and Melow’s version (shown at the bottom of Melow’s Settings).</p>
     </article>
 
-    <footer>
-      <p><a href="../support/">Support</a> · <a href="../privacy/">Privacy Policy</a> · <a href="../terms/">Terms of Use</a></p>
-      <p>© 2026 Melow. Apple Music is a trademark of Apple Inc. Melow is not made or endorsed by Apple.</p>
+    <footer class="site-footer">
+      <div class="foot glass">
+        <a class="brand" href="../"><img src="../icon.png" alt="" width="30" height="30">Melow</a>
+        <nav aria-label="About Melow">
+          <a href="../support/">Support</a>
+          <a href="../privacy/">Privacy Policy</a>
+          <a href="../terms/">Terms of Use</a>
+        </nav>
+      </div>
+      <p class="legal">© 2026 Melow. Apple Music is a trademark of Apple Inc. Melow is not made or endorsed by Apple.</p>
     </footer>
   </div>
 </body>

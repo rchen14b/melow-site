@@ -10,27 +10,55 @@
   <meta property="og:image" content="https://rchen14b.github.io/melow-site/media/sideways-shelf.jpg">
   <link rel="icon" href="icon.png">
   <link rel="apple-touch-icon" href="icon.png">
+  <meta name="theme-color" content="#f2efeb" media="(prefers-color-scheme: light)">
+  <meta name="theme-color" content="#1b1c1e" media="(prefers-color-scheme: dark)">
   <link rel="stylesheet" href="style.css">
+  <script>document.documentElement.classList.add("js")</script>
+  <script src="site.js" defer></script>
 </head>
 <body>
-  <div class="wrap wide">
-    <header class="bar">
-      <a class="brand" href="./"><img src="icon.png" alt="">Melow</a>
-      <nav>
+  <header class="site-nav">
+    <nav class="nav-pill glass" aria-label="Melow">
+      <a class="brand" href="#top"><img src="icon.png" alt="" width="30" height="30">Melow</a>
+      <ul class="nav-links">
+        <li><a href="#landscape">Landscape</a></li>
+        <li><a href="#shelf">Shelf</a></li>
+        <li><a href="#player">Player</a></li>
+        <li><a href="#mac">Mac</a></li>
+        <li><a href="#languages">Languages</a></li>
+        <li><a href="#more">Features</a></li>
+        <li><a href="#pricing">Pricing</a></li>
+      </ul>
+      <a class="nav-button" href="support/">Support</a>
+      <button class="nav-toggle" type="button" aria-expanded="false" aria-controls="nav-menu" aria-label="Menu"></button>
+    </nav>
+    <div class="nav-menu glass" id="nav-menu">
+      <ul>
+        <li><a href="#landscape">Landscape</a></li>
+        <li><a href="#shelf">Shelf</a></li>
+        <li><a href="#player">Player</a></li>
+        <li><a href="#mac">Mac</a></li>
+        <li><a href="#languages">Languages</a></li>
+        <li><a href="#more">Features</a></li>
+        <li><a href="#pricing">Pricing</a></li>
+      </ul>
+      <div class="minor">
         <a href="support/">Support</a>
         <a href="privacy/">Privacy</a>
         <a href="terms/">Terms</a>
-      </nav>
-    </header>
+      </div>
+    </div>
+  </header>
 
+  <div class="wrap wide">
     <section class="hero">
       <img src="icon.png" alt="Melow's icon: a black vinyl record on a peach tile">
       <h1>Melow</h1>
       <p class="tagline">Your Apple Music, on a shelf of CDs.</p>
       <p class="lede">Flip through your albums like a real shelf, open a case to see the songs inside, and play from a record you can hold. On iPhone, iPad and Mac, upright or sideways.</p>
       <div class="badges">
-        <span class="accent">Free for a week</span>
-        <span>Coming to the App Store</span>
+        <a class="pill accent" href="#pricing">Free for a week</a>
+        <span class="pill glass">Coming to the App Store</span>
       </div>
       <figure class="hero-video">
         <video class="shot wide-phone" autoplay muted loop playsinline preload="metadata"
@@ -43,7 +71,7 @@
     </section>
 
     <section class="showcase" id="landscape">
-      <p class="eyebrow">Built for landscape</p>
+      <p class="eyebrow glass">Built for landscape</p>
       <h2>Turn your iPhone sideways. Melow turns with you.</h2>
       <div class="prose">
         <p>Most music apps on iPhone stand upright and stay that way. Melow is designed for both. Sideways, your shelf becomes a full-width row of albums to flick through, an open case floats over the row, and the player sets the record beside its lyrics.</p>
@@ -63,7 +91,7 @@
     </section>
 
     <section class="showcase" id="shelf">
-      <p class="eyebrow">The shelf</p>
+      <p class="eyebrow glass">The shelf</p>
       <h2>A shelf you can flip through</h2>
       <div class="prose">
         <p>Albums and playlists stand as real jewel cases, each spine printed in its cover's own colour. Tap the case in front of you and its lid swings open on the hinge, with the songs inside.</p>
@@ -88,7 +116,7 @@
     </section>
 
     <section class="showcase" id="player">
-      <p class="eyebrow">The record is the player</p>
+      <p class="eyebrow glass">The record is the player</p>
       <h2>Tap the cover. Drag it for the next song.</h2>
       <div class="prose">
         <p>The whole screen becomes the record: the song's title runs down the spine, the progress sits tight under the case, and lyrics follow the music with the current line lit. On iPad there's room for the record and its lyrics side by side.</p>
@@ -108,7 +136,7 @@
     </section>
 
     <section class="showcase" id="mac">
-      <p class="eyebrow">On the Mac</p>
+      <p class="eyebrow glass">On the Mac</p>
       <h2>A window that's all record</h2>
       <div class="prose">
         <p>No title bar, nothing in the way. The shelf bar folds into the corner until your pointer comes near, the flow follows your trackpad, mouse wheel and arrow keys, and the player floats previous, play and next over the cover in clear glass.</p>
@@ -138,7 +166,7 @@
     </section>
 
     <section class="showcase" id="languages">
-      <p class="eyebrow">Made for your language</p>
+      <p class="eyebrow glass">Made for your language</p>
       <h2>Your language, set the way CDs are printed</h2>
       <div class="prose">
         <p>Melow speaks English, Español, Français, 한국어, 简体中文, 繁體中文 and 日本語. On every spine, Chinese, Japanese and Korean titles stand upright, one character above the next, while Latin titles run along the side, just like the spines on a record shop shelf. In light or dark.</p>
@@ -158,30 +186,36 @@
     </section>
 
     <section class="showcase" id="more">
-      <p class="eyebrow">And more</p>
+      <p class="eyebrow glass">And more</p>
       <h2>Everywhere your music is</h2>
       <div class="extras">
-        <div class="card">
+        <div class="card glass">
+          <span class="icon" aria-hidden="true"><svg viewBox="0 0 24 24"><rect x="3.5" y="3.5" width="7.5" height="7.5" rx="2"/><rect x="13" y="3.5" width="7.5" height="7.5" rx="2"/><rect x="3.5" y="13" width="17" height="7.5" rx="2"/></svg></span>
           <h3>Widgets</h3>
           <p>The album playing as a jewel case on your Home Screen, a shelf of spines that opens any album, and Lock Screen sizes.</p>
         </div>
-        <div class="card">
+        <div class="card glass">
+          <span class="icon" aria-hidden="true"><svg viewBox="0 0 24 24"><path d="M4 10.5v3M8 7.5v9M12 4.5v15M16 8.5v7M20 10.5v3"/></svg></span>
           <h3>Control Center and Siri</h3>
           <p>Play or pause from Control Center, or just ask: “Play Recently Added in Melow.”</p>
         </div>
-        <div class="card">
+        <div class="card glass">
+          <span class="icon" aria-hidden="true"><svg viewBox="0 0 24 24"><path d="M4.5 5.5h15M4.5 10h10"/><path d="M4.5 14.5h15" stroke-width="2.8"/><path d="M4.5 19h8"/></svg></span>
           <h3>Lyrics that follow along</h3>
           <p>Timed lyrics light up line by line; tap one to jump there.</p>
         </div>
-        <div class="card">
+        <div class="card glass">
+          <span class="icon" aria-hidden="true"><svg viewBox="0 0 24 24"><path d="M4 4.8v5.4l4.6-2.7z" fill="currentColor"/><path d="M11.5 7.5h8.5M4 13.5h16M4 19h16"/></svg></span>
           <h3>Your queue, your library</h3>
           <p>Play Next, Add to Queue and Add to Library, from any song or album.</p>
         </div>
-        <div class="card">
+        <div class="card glass">
+          <span class="icon" aria-hidden="true"><svg viewBox="0 0 24 24"><rect x="2.5" y="4.5" width="14" height="10" rx="1.6"/><path d="M1.5 18h12"/><rect x="16.5" y="9" width="6" height="11" rx="1.6"/></svg></span>
           <h3>iPhone, iPad and Mac</h3>
           <p>One purchase for every device. On the Mac, the shelf follows your trackpad, mouse and keys.</p>
         </div>
-        <div class="card">
+        <div class="card glass">
+          <span class="icon" aria-hidden="true"><svg viewBox="0 0 24 24"><rect x="5" y="10.5" width="14" height="10" rx="2.6"/><path d="M8.5 10.5V8a3.5 3.5 0 0 1 7 0v2.5"/></svg></span>
           <h3>Yours alone</h3>
           <p>Melow plays through your own Apple Music. No sign-up, no ads, no tracking.</p>
         </div>
@@ -189,20 +223,37 @@
     </section>
 
     <section class="showcase pricing" id="pricing">
-      <p class="eyebrow">Melow Pro</p>
+      <p class="eyebrow glass">Melow Pro</p>
       <h2>Try everything free for a week</h2>
-      <div class="card">
+      <div class="card glass">
         <p>Then keep it the way you like: by the month, or once for good. One purchase covers your iPhone, iPad and Mac.</p>
-        <div class="plans"><span>Monthly</span><span>Lifetime</span></div>
+        <div class="plans">
+          <div class="plan">
+            <h3>Monthly</h3>
+            <p>All of Melow, renewed every month.</p>
+          </div>
+          <div class="plan best">
+            <span class="tag">Best value</span>
+            <h3>Lifetime</h3>
+            <p>Melow Pro for good, with one payment.</p>
+          </div>
+        </div>
         <p class="small">Melow works with Apple Music. Your library plays with or without an Apple Music subscription; the Apple Music catalog needs one. Melow Pro is separate from Apple Music.</p>
       </div>
     </section>
 
     <p class="note">Screens show Melow's built-in demo albums. In your copy, the shelf is your own Apple Music library.</p>
 
-    <footer>
-      <p><a href="support/">Support</a> · <a href="privacy/">Privacy Policy</a> · <a href="terms/">Terms of Use</a></p>
-      <p>© 2026 Melow. Apple Music is a trademark of Apple Inc. Melow is not made or endorsed by Apple.</p>
+    <footer class="site-footer">
+      <div class="foot glass">
+        <a class="brand" href="#top"><img src="icon.png" alt="" width="30" height="30">Melow</a>
+        <nav aria-label="About Melow">
+          <a href="support/">Support</a>
+          <a href="privacy/">Privacy Policy</a>
+          <a href="terms/">Terms of Use</a>
+        </nav>
+      </div>
+      <p class="legal">© 2026 Melow. Apple Music is a trademark of Apple Inc. Melow is not made or endorsed by Apple.</p>
     </footer>
   </div>
 </body>
