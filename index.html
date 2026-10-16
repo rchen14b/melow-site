@@ -4,13 +4,16 @@
   <meta charset="utf-8">
   <meta name="viewport" content="width=device-width, initial-scale=1">
   <title>Melow</title>
-  <meta name="description" content="Melow plays your Apple Music as a shelf of CDs, on iPhone, iPad and Mac.">
+  <meta name="description" content="Melow plays your Apple Music as a shelf of CDs on iPhone, iPad and Mac, and it is built for your iPhone held sideways too.">
+  <meta property="og:title" content="Melow: your Apple Music, on a shelf of CDs">
+  <meta property="og:description" content="Flip through your albums like a real shelf, open a case to see the songs, and play from a record you can hold. Upright or sideways.">
+  <meta property="og:image" content="https://rchen14b.github.io/melow-site/media/sideways-shelf.jpg">
   <link rel="icon" href="icon.png">
   <link rel="apple-touch-icon" href="icon.png">
   <link rel="stylesheet" href="style.css">
 </head>
 <body>
-  <div class="wrap">
+  <div class="wrap wide">
     <header class="bar">
       <a class="brand" href="./"><img src="icon.png" alt="">Melow</a>
       <nav>
@@ -24,27 +27,148 @@
       <img src="icon.png" alt="Melow's icon: a black vinyl record on a peach tile">
       <h1>Melow</h1>
       <p class="tagline">Your Apple Music, on a shelf of CDs.</p>
-      <span class="soon">Coming to the App Store for iPhone, iPad and Mac</span>
+      <p class="lede">Flip through your albums like a real shelf, open a case to see the songs inside, and play from a record you can hold. On iPhone, iPad and Mac, upright or sideways.</p>
+      <div class="badges">
+        <span class="accent">Free for a week</span>
+        <span>Coming to the App Store</span>
+      </div>
+      <figure class="hero-video">
+        <video class="shot wide-phone" autoplay muted loop playsinline preload="metadata"
+               poster="media/sideways-flow-poster.jpg" width="1280" height="588"
+               aria-label="Melow on an iPhone held sideways: a finger drags the row of album cases, flicks it so it glides, flicks it back, and taps a case, which opens to show its songs.">
+          <source src="media/sideways-flow.mp4" type="video/mp4">
+        </video>
+        <figcaption>Melow on iPhone, held sideways. A flick, a glide, and a case that opens.</figcaption>
+      </figure>
     </section>
 
-    <section class="features">
-      <div class="card">
-        <h3>A shelf you can flip through</h3>
-        <p>Your albums and playlists stand as real jewel cases. Swipe through them, and tap one to open its lid and see the songs inside.</p>
+    <section class="showcase" id="landscape">
+      <p class="eyebrow">Built for landscape</p>
+      <h2>Turn your iPhone sideways. Melow turns with you.</h2>
+      <div class="prose">
+        <p>Most music apps on iPhone stand upright and stay that way. Melow is designed for both. Sideways, your shelf becomes a full-width row of albums to flick through, an open case floats over the row, and the player sets the record beside its lyrics.</p>
       </div>
-      <div class="card">
-        <h3>The record is the player</h3>
-        <p>The whole screen becomes the CD: tap the cover to play or pause, drag it for the next song, with the title printed down the spine.</p>
-      </div>
-      <div class="card">
-        <h3>Made for every screen</h3>
-        <p>Designed for iPhone held upright or sideways, for iPad and for the Mac, with Liquid Glass throughout.</p>
-      </div>
-      <div class="card">
-        <h3>Your music, your account</h3>
-        <p>Melow plays through your own Apple Music. No sign-up, no ads, no tracking.</p>
+      <div class="pair">
+        <figure>
+          <img class="shot wide-phone" src="media/sideways-player.jpg" width="1400" height="644" loading="lazy"
+               alt="The player on a sideways iPhone: the album as a CD jewel case on the left, its title upright down the spine, and the lyrics on the right with the current line lit.">
+          <figcaption>The record and its lyrics, side by side</figcaption>
+        </figure>
+        <figure>
+          <img class="shot wide-phone" src="media/sideways-open.jpg" width="1400" height="644" loading="lazy"
+               alt="An album case opened over the row of albums on a sideways iPhone, showing its songs, with the play bar in the corner.">
+          <figcaption>An open case, floating over the row</figcaption>
+        </figure>
       </div>
     </section>
+
+    <section class="showcase" id="shelf">
+      <p class="eyebrow">The shelf</p>
+      <h2>A shelf you can flip through</h2>
+      <div class="prose">
+        <p>Albums and playlists stand as real jewel cases, each spine printed in its cover's own colour. Tap the case in front of you and its lid swings open on the hinge, with the songs inside.</p>
+      </div>
+      <div class="trio">
+        <figure>
+          <img class="shot phone" src="media/phone-shelf.jpg" width="640" height="1391" loading="lazy"
+               alt="Melow on an upright iPhone: a fanned stack of album cases with the centred album standing forward, and the play bar at the bottom.">
+          <figcaption>The stack, upright</figcaption>
+        </figure>
+        <figure>
+          <img class="shot phone" src="media/phone-open.jpg" width="640" height="1391" loading="lazy"
+               alt="An opened album case on an upright iPhone listing its songs, the playing song marked.">
+          <figcaption>Open a case</figcaption>
+        </figure>
+        <figure>
+          <img class="shot phone" src="media/phone-player.jpg" width="640" height="1391" loading="lazy"
+               alt="The player on an upright iPhone: the jewel case with the song title down its spine, a progress bar, and lyrics running beneath.">
+          <figcaption>Play from the record</figcaption>
+        </figure>
+      </div>
+    </section>
+
+    <section class="showcase" id="player">
+      <p class="eyebrow">The record is the player</p>
+      <h2>Tap the cover. Drag it for the next song.</h2>
+      <div class="prose">
+        <p>The whole screen becomes the record: the song's title runs down the spine, the progress sits tight under the case, and lyrics follow the music with the current line lit. On iPad and Mac there's room for everything at once.</p>
+      </div>
+      <div class="tablets">
+        <figure>
+          <img class="shot tablet" src="media/ipad-player.jpg" width="900" height="1200" loading="lazy"
+               alt="The player on iPad: a large jewel case above the progress bar, and lyrics below.">
+          <figcaption>iPad: the record above its lyrics</figcaption>
+        </figure>
+        <figure>
+          <img class="shot tablet" src="media/ipad-shelf.jpg" width="900" height="1200" loading="lazy"
+               alt="The album flow on iPad, with the full play bar at the bottom.">
+          <figcaption>iPad: the album flow</figcaption>
+        </figure>
+      </div>
+    </section>
+
+    <section class="showcase" id="languages">
+      <p class="eyebrow">Made for your language</p>
+      <h2>Chinese and Japanese, set the way CDs are printed</h2>
+      <div class="prose">
+        <p>On every spine, Chinese and Japanese titles stand upright, one character above the next, while English runs along the side, just like the spines on a record shop shelf. Melow speaks English, 简体中文, 繁體中文 and 日本語, in light or dark.</p>
+      </div>
+      <div class="duo-phones">
+        <figure>
+          <img class="shot phone" src="media/phone-chinese.jpg" width="640" height="1391" loading="lazy"
+               alt="Melow in Simplified Chinese: the shelf named 最近添加 and an open album listing its songs, with 12 首歌曲 in the header.">
+          <figcaption>简体中文</figcaption>
+        </figure>
+        <figure>
+          <img class="shot phone" src="media/phone-light.jpg" width="640" height="1391" loading="lazy"
+               alt="Melow in light mode on an upright iPhone: the stack of album cases on warm paper.">
+          <figcaption>Light mode</figcaption>
+        </figure>
+      </div>
+    </section>
+
+    <section class="showcase" id="more">
+      <p class="eyebrow">And more</p>
+      <h2>Everywhere your music is</h2>
+      <div class="extras">
+        <div class="card">
+          <h3>Widgets</h3>
+          <p>The album playing as a jewel case on your Home Screen, a shelf of spines that opens any album, and Lock Screen sizes.</p>
+        </div>
+        <div class="card">
+          <h3>Control Center and Siri</h3>
+          <p>Play or pause from Control Center, or just ask: “Play Recently Added in Melow.”</p>
+        </div>
+        <div class="card">
+          <h3>Lyrics that follow along</h3>
+          <p>Timed lyrics light up line by line; tap one to jump there.</p>
+        </div>
+        <div class="card">
+          <h3>Your queue, your library</h3>
+          <p>Play Next, Add to Queue and Add to Library, from any song or album.</p>
+        </div>
+        <div class="card">
+          <h3>iPhone, iPad and Mac</h3>
+          <p>One purchase for every device. On the Mac, the shelf follows your trackpad, mouse and keys.</p>
+        </div>
+        <div class="card">
+          <h3>Yours alone</h3>
+          <p>Melow plays through your own Apple Music. No sign-up, no ads, no tracking.</p>
+        </div>
+      </div>
+    </section>
+
+    <section class="showcase pricing" id="pricing">
+      <p class="eyebrow">Melow Pro</p>
+      <h2>Try everything free for a week</h2>
+      <div class="card">
+        <p>Then keep it the way you like: by the month, or once for good. One purchase covers your iPhone, iPad and Mac.</p>
+        <div class="plans"><span>Monthly</span><span>Lifetime</span></div>
+        <p class="small">Melow works with Apple Music. Your library plays with or without an Apple Music subscription; the Apple Music catalog needs one. Melow Pro is separate from Apple Music.</p>
+      </div>
+    </section>
+
+    <p class="note">Screens show Melow's built-in demo albums. In your copy, the shelf is your own Apple Music library.</p>
 
     <footer>
       <p><a href="support/">Support</a> · <a href="privacy/">Privacy Policy</a> · <a href="terms/">Terms of Use</a></p>
