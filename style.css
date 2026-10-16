@@ -526,7 +526,8 @@ figcaption { margin-top: 14px; text-align: center; color: var(--ink-faint); font
 .pricing .small { color: var(--ink-faint); font-size: 14px; margin: 0; }
 @media (max-width: 420px) { .plans { grid-template-columns: 1fr; gap: 18px; } }
 
-.note { text-align: center; color: var(--ink-faint); font-size: 13.5px; margin: 52px 0 0; }
+.note { max-width: 680px; margin: 52px auto 0; text-align: center; color: var(--ink-faint); font-size: 13.5px; }
+.note a { color: var(--ink-soft); text-decoration: underline; text-decoration-color: var(--rule); text-underline-offset: 2px; }
 
 @media (max-width: 480px) {
   .hero h1 { font-size: 40px; }
